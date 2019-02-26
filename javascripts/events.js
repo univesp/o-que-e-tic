@@ -36,12 +36,12 @@ var inicio = "sim";
 
   // Move o footer para dentro do app-header e faz uma cópia dele no modal de teoria
   $("footer").appendTo("#copia-footer");
-  $("footer").clone().appendTo(".teoria-overlay"); 
+  $("footer").clone().appendTo(".teoria-overlay");
 
 
   // Controlam o modal de teoria
   var caixaTeoria =  document.querySelector('.teoria-overlay')
-
+  //Chama modal de teoria
   function chamaTeoria(){
     $(".teoria-overlay").addClass("d-flex");
     $(".teoria-overlay").removeClass('slideOutDown');
@@ -49,6 +49,7 @@ var inicio = "sim";
     $(".dark-overlay").delay(200).fadeIn();
     console.log("chamando teoria")
   };
+  //Dispensa modal de teoria
   function dispensaTeoria(){
     caixaTeoria.addEventListener('animationend', function tiraFlex(){
       caixaTeoria.classList.remove("d-flex");
@@ -61,6 +62,7 @@ var inicio = "sim";
     console.log("dispensando teoria");
     inicio = "não";
   };
+  //Chama a navbar
   function chamaHeader(){
     $("nav").fadeIn();
   }
@@ -69,14 +71,12 @@ var inicio = "sim";
     $("#fechar-container").addClass('animated fadeInRight');
     $("#fechar-container").show();
   };
-
   function dispensaFechar(){
     $("#fechar-container").removeClass('animated fadeInRight');
     $("#fechar-container").addClass('animated fadeOutRight');
   }
 
   //Chama teoria ao início do REA
-  // DESCOMENTAR
   setTimeout(chamaTeoria, 250);
   setTimeout(chamaHeader, 1100);
 

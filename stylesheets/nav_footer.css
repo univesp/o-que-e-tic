@@ -1,0 +1,64 @@
+nav {
+  display: none;
+  z-index: 600;
+}
+
+
+/* Botão Pular para Conteúdo Principal */
+
+nav .logo .pularNavegacao {
+  background-color: white;
+  color: #607989;
+}
+
+/* Caixa do Logotipo */
+
+nav .logo img {
+  background-color: #7054d8;
+}
+
+nav .logo img:hover {
+  background-color: #5538c1;
+}
+
+/* Botões do Navbar */
+nav .nav-link {
+  color: #fff;
+  background-color: #7054d8;
+}
+
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .nav-link[aria-expanded="true"] {
+  background-color: #5538c1;
+  color: #fff;
+}
+
+/* Rodapé */
+footer .btn {
+  white-space: nowrap;
+}
+
+footer, footer .aval-rea .btn-secondary {
+  background-color: white;
+  color: #354551;
+}
+
+/* Main */
+
+main {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 992px) {
+
+  main {
+    padding-bottom: 2rem;
+  }
+
+  /* footer .aval-rea {
+    flex-shrink: 1;
+  } */
+
+}

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png" />
+  <meta property="og:title" content="Univesp | O que é TIC?" />
+  <meta property="og:description"
+  content=""/>
+  <title>Univesp | O que é TIC?</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.0.css">
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/animate.css"><!--carregar arquivo css-->
+  <link rel="stylesheet" href="stylesheets/rotating-card.css"><!--carregar css dos cartões giratórios-->
+
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Menu -->
+  <nav>
+    <div class="container d-flex justify-content-end">
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/colorida-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp em letras maiúsculas, sendo a letra V estilizada.">
+        </a>
+      </div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing" id="share-buttons"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Conteúdo -->
+<main id="conteudoPrincipal">
+
+  <div class="container-fluid" id="fechar-container">
+    <div class="botao-fechar">
+      <i class="material-icons" style="font-size: 25px; color: #fff">close</i>
+    </div>
+  </div>
+  <!-- Overlay do modal de teoria -->
+  <div class="container-fluid dark-overlay">
+  </div>
+  <!-- Modal de teoria -->
+  <div class="container-fluid teoria-overlay">
+
+    <!-- Overlay branco sobre o fundo -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; opacity: 0.5; z-index: -1">
+    </div>
+
+    <div class="container d-flex flex-column align-items-center teoria-container">
+
+      <div class="intro">
+        <h2>O que é TIC?</h2>
+        <p>
+          O que significa Tecnologia da Informação e Comunicação, ou melhor, TIC?
+        </p>
+        <p>
+          Vamos descobrir!
+        </p>
+        <hr style="border: 1px solid #7054d8; width: 200px; margin-top: 4rem;" />
+      </div>
+
+      <p style="text-align: center">
+        <strong>Clique nos cards a seguir:</strong>
+      </p>
+
+      <!-- Cards -->
+      <div class="d-flex todos-cards">
+        <!-- Começo do card -->
+        <div id="card1" class="card-container manual-flip ">
+          <div class="card">
+            <div class="front">
+              <h3 class="conceito">Tecnologia</h3>
+            </div>
+            <div class="back">
+              <h3>Tecnologia</h3>
+              <p>Quando o conhecimento técnico e científico estão conectados e são desenvolvidos a partir de pesquisas e produções de outras pessoas.</p>
+            </div>
+          </div>
+        </div>
+        <div id="card2" class="card-container manual-flip ">
+          <div class="card">
+            <div class="front">
+              <h3 class="conceito">Informação</h3>
+            </div>
+            <div class="back">
+              <h3>Informação</h3>
+              <p>É um conjunto de dados que transmite uma mensagem sobre alguma coisa.</p>
+            </div>
+          </div>
+        </div>
+        <div id="card3" class="card-container manual-flip ">
+          <div class="card">
+            <div class="front">
+              <h3 class="conceito">Comunicação</h3>
+            </div>
+            <div class="back">
+              <h3>Comunicação</h3>
+              <p>É a mensagem enviada, recebida e interpretada. Acontece entre o emissor e o receptor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="teoria">
+        <figure class="ilustra">
+          <img  src="assets/ilustra01.png" alt="ilustração de pessoa redigindo um e-mail">
+        </figure>
+        <p>
+          Então podemos compreender que TIC refere-se às formas que podem comunicar informações por meio das tecnologias. As tecnologias estão em todo lugar, mas, nesta semana, focaremos a internet. E por que a internet? Porque hoje é muito difícil viver sem ela, estamos tão dependentes da internet para a comunicação, que muitas vezes esquecemos que existe outras formas de nos comunicarmos.
+        </p>
+        <p>
+          A internet é tão nova que muitos profissionais não estão preparados para lidar com ela. Internet não se resume a enviar mensagem por Whatsapp, pesquisar informações em sites e postar fotos no Facebook. É muito mais que isso. E vamos além: não basta saber utilizar as tecnologias, é necessário saber discernir o que é certo ou errado, o que é verídico ou falso, o que é benéfico ou maléfico. É preciso entender que nesse mundo virtual existe uma forma própria de se pensar e raciocinar.
+        </p>
+        <p style="clear: both">
+          Independente da sua idade, aqueles que não conhecem como lidar com a internet são crianças no mundo virtual. E como qualquer criança, está aprendendo sobre as novidades desse mundo. Vamos iniciar conhecendo alguns termos de tecnologia e internet que farão diferença na sua vida.
+        </p>
+        <p>
+          Responda às perguntas a seguir e descubra qual é o seu nível de conhecimento em internet. No feedback, você encontrará materiais para complementar os seus conhecimentos sobre o tema.
+        </p>
+      </div>
+
+      <button type="button" class="btn btn-lg btn-secondary botao-modal" id="botao-modal">
+        Vamos lá
+      </button>
+
+    </div>
+  </div>
+
+<!-- REA -->
+  <div class="big-container">
+
+    <!-- Header do recurso -->
+    <div class="row app-header" id="pontuacao">
+      <div class="conclusao">
+        <h2>O que é TIC?</h2>
+      </div>
+      <div class="avatar">
+        <img src="assets/avatar.png" alt="avatar do usuário">
+      </div>
+      <div class="stars">
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <br	class="d-md-none d-block">
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+        <i class="material-icons star-off">star</i>
+      </div>
+      <div class="app-header-btn">
+        <button type="button" class="btn btn-outline-secondary" id="retoma-modal" data-toggle="tooltip" data-placement="left" data-animation="true" title="Clique aqui para rever o conceito de TIC">O que é TIC?</button>
+      </div>
+      <div class="conclusao">
+        <div class="conclusao-container">
+          <p>
+            Agora que você já sabe quantos selinhos ganhou, que tal voltar a esse teste durante nossa disciplina para tentar ganhar mais selinhos? Espero que alcance o máximo até o término dos nossos estudos! Conto com você!
+          </p>
+          <p>
+            E caso você ainda não tenha alcançado o nível 3 de todas as situações, não se preocupe. Guarde esse material para futuras consultas. O importante é que agora você está caminhando com as TICs e, aos poucos, essas novas ações no mundo digital farão parte do seu cotidiano!
+          </p>
+          <p>
+            Até a próxima!
+          </p>
+          <i class="material-icons" id="recolher">keyboard_arrow_up</i>
+        </div>
+        <div id="copia-footer"></div>
+      </div>
+    </div>
+
+    <!-- Conversa + personagens -->
+    <div class="row app-container">
+
+      <!-- Personagem 1 - Funcionário -->
+      <div id="container-func" class="order-2 order-md-1">
+        <div class="personagem">
+          <img src="assets/func-idle.gif" alt="funcionário" width="100%">
+        </div>
+      </div>
+
+      <!-- Tela de pontuação -->
+      <div class="big-stars-container" style="display:none">
+        <div class="big-stars">
+          <div>
+            <i class="material-icons star-off">star</i>
+            <i class="material-icons star-off">star</i>
+            <i class="material-icons star-off">star</i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frame da conversa -->
+      <div id="container-conversa" class="order-1 order-md-2">
+
+        <!-- Conversa -->
+        <div class="tela-conversa" id="conversa">
+          <!-- Assunto 1 -->
+          <div class="assunto1">
+            <div class="pergunta">
+              <div class="chefe">
+                <p>Olá!</p>
+              </div>
+              <div class="chefe">
+                <p>Você pode salvar aquele arquivo da apresentação de modo que eu possa acessá-lo de todos os lugares?</p>
+              </div>
+            </div>
+            <div class="resposta usuario">
+            </div>
+            <div class="feedback nivel1">
+              <div class="chefe">
+                <p>Acho que é melhor salvar em uma nuvem.</p>
+              </div>
+              <div class="chefe">
+                <p>Veja mais sobre isso neste vídeo:</p>
+              </div>
+            </div>
+            <div class="feedback nivel2">
+              <div class="chefe">
+                <p>Pode até ser, mas o melhor é salvar em uma nuvem.</p>
+              </div>
+              <div class="chefe">
+                <p>Veja mais sobre isso neste vídeo:</p>
+              </div>
+            </div>
+            <div class="feedback nivel3">
+              <div class="chefe">
+                <p>Perfeito! 😃</p>
+              </div>
+              <div class="chefe">
+                <p>Assisti a um vídeo sobre isso hoje mesmo, veja:</p>
+              </div>
+            </div>
+            <div class="link chefe">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/67okcMhiFo4"></iframe>
+              </div>
+              <p><strong>O que é nuvem?</strong></p>
+              <a href="https://www.youtube.com/watch?v=67okcMhiFo4" target="_blank">https://www.youtube.com/watch?v=67okcMhiFo4</a>
+            </div>
+          </div>
+
+          <!-- Assunto 2 -->
+          <div class="assunto2">
+            <div class="pergunta">
+              <div class="chefe">
+                <p>Também preciso enviar um arquivo grande para o cliente.</p>
+              </div>
+              <div class="chefe">
+                <p>Você sabe qual é a melhor forma de fazer isso?</p>
+              </div>
+            </div>
+            <div class="resposta usuario">
+            </div>
+            <div class="feedback nivel1">
+              <div class="chefe">
+                <p>Acabaram de me indicar o Google Drive.</p>
+              </div>
+              <div class="chefe">
+                <p>Veja como compartilhar arquivos nele:</p>
+              </div>
+            </div>
+            <div class="feedback nivel2">
+              <div class="chefe">
+                <p>Acho que essa não é uma boa opção.</p>
+              </div>
+              <div class="chefe">
+                <p>Acabaram de me indicar o Google Drive, veja como compartilhar arquivos nele:</p>
+              </div>
+            </div>
+            <div class="feedback nivel3">
+              <div class="chefe">
+                <p>Ótimo!<p>
+              </div>
+              <div class="chefe">
+                <p>Posso fazer isso pelo Google Drive, certo?</p>
+              </div>
+              <div class="chefe">
+                <p>Encontrei este vídeo que mostra como compartilhar arquivos nele:</p>
+              </div>
+            </div>
+            <div class="link chefe">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hD-ffUPmqGA"></iframe>
+              </div>
+              <p><strong>Google Drive - Como compartilhar arquivos</strong></p>
+              <a href="https://www.youtube.com/watch?v=hD-ffUPmqGA" target="_blank">https://www.youtube.com/watch?v=hD-ffUPmqGA</a>
+            </div>
+          </div>
+
+          <!-- Assunto 3 -->
+          <div class="assunto3">
+            <div class="pergunta">
+              <div class="chefe">
+                <p>Agora sobre o relatório que preciso enviar:</p>
+              </div>
+              <div class="chefe">
+                <p>você sabe como colocar uma url imensa e cheia de letras estranhas em um documento de uma forma mais agradável?</p>
+              </div>
+            </div>
+            <div class="resposta usuario"></div>
+            <div class="feedback nivel1">
+              <div class="chefe">
+                <p>Dá uma olhada neste artigo, acho que ele vai nos dar uma resposta:</p>
+              </div>
+            </div>
+            <div class="feedback nivel2">
+              <div class="chefe">
+                <p>Dá uma olhada neste artigo, acho que ele vai nos dar uma resposta:</p>
+              </div>
+            </div>
+            <div class="feedback nivel3">
+              <div class="chefe">
+                <p>Verdade!</p>
+              </div>
+              <div class="chefe">
+                <p>Vi algo sobre isso no artigo:</p>
+              </div>
+            </div>
+            <div class="link chefe">
+              <p><strong>A importância de encurtar uma url antes de compartilhar</strong></p>
+              <a href="https://tinyurl.com/y8m3e729" target="_blank">https://tinyurl.com/y8m3e729</a>
+            </div>
+          </div>
+
+          <!-- Assunto 4 -->
+          <div class="assunto4">
+            <div class="pergunta">
+              <div class="chefe">
+                <p>Na verdade, seria melhor enviar a apresentação, o relatório e mais alguns arquivos do projeto de uma só vez para o cliente.</p>
+              </div>
+              <div class="chefe">
+                <p>Podemos fazer isso?</p>
+              </div>
+            </div>
+            <div class="resposta usuario"></div>
+            <div class="feedback nivel1">
+              <div class="chefe">
+                <p>Acabaram de me mandar este link sobre como compartilhar uma pasta no Google Drive.</p>
+              </div>
+              <div class="chefe">
+                <p>Acho que essa vai ser a melhor opção:</p>
+              </div>
+            </div>
+            <div class="feedback nivel2">
+              <div class="chefe">
+                <p>Acabaram de me mandar este link sobre como compartilhar uma pasta no Google Drive.</p>
+              </div>
+              <div class="chefe">
+                <p>Acho que essa vai ser a melhor opção:</p>
+              </div>
+            </div>
+            <div class="feedback nivel3">
+              <div class="chefe">
+                <p>Que ótima solução! 👏</p>
+              </div>
+              <div class="chefe">
+                <p>Acho que vi algo sobre isso neste link:</p>
+              </div>
+            </div>
+            <div class="link chefe">
+              <p><strong>Como compartilhar uma pasta no Google Drive</strong></p>
+              <a href="https://tecnoblog.net/237738/ativar-compartilhar-pasta-google-drive/" target="_blank">https://tecnoblog.net/237738/ativar-compartilhar-pasta-google-drive</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Respostas do funcionário -->
+        <div id="alternativas">
+          <div class="assunto1">
+            <div class="nivel1"><p>Eu posso salvar em um pendrive para você.</p></div>
+            <div class="nivel2"><p>Vou te enviar o arquivo anexado em um e-mail, pode ser?</p></div>
+            <div class="nivel3"><p>Vou salvar em uma nuvem e te mando.</p></div>
+          </div>
+          <div class="assunto2">
+            <div class="nivel1"><p>Ops! Não tenho certeza! 😬</p></div>
+            <div class="nivel2"><p>Podemos salvar o arquivo em um pendrive e mandar entregar para o cliente, o que acha?</p></div>
+            <div class="nivel3"><p>É só fazer o upload em uma nuvem e compartilhar o acesso! </p></div>
+          </div>
+          <div class="assunto3">
+            <div class="nivel1"><p>O que é url? 😕</p></div>
+            <div class="nivel2"><p>Não tem jeito! Tem que inserir a url assim mesmo, do jeito que está.</p></div>
+            <div class="nivel3"><p>É só utilizar um encurtador de URL!</p></div>
+          </div>
+          <div class="assunto4">
+            <div class="nivel1"><p>Ainda acho que o pendrive é a melhor solução.</p></div>
+            <div class="nivel2"><p>Podemos enviar tudo em anexo por e-mail, o que acha?</p></div>
+            <div class="nivel3"><p>Você pode criar uma pasta na nuvem para subir os arquivos e ativar o link de compartilhamento da pasta. Assim, você pode enviar a url do link por e-mail e evitar que os arquivos sejam anexados, deixando o seu envio e recebimento bem mais rápido.</p></div>
+          </div>
+        </div>
+
+        </div>
+
+        <!-- Personagem 2 - Chefe -->
+        <div id="container-chefe"  class="order-3">
+          <div class="personagem nivel2">
+            <img src="assets/chefe-idle.gif" alt="chefe" width="100%">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="cred-rea">
+
+        <!-- Comente em caso de adaptação do REA -->
+        <p>
+          <span>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2019.txt" target="_blank">MIT</a>.
+            Você pode utilizá-lo, compartilhá-lo e modificá-lo.</span>
+            <span><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></span>
+            <span><a href="#" target="_blank" aria-label="GitHub">GitHub <i class="fab fa-github"></i></a></span>.
+            <p>
+              <!-- Descomente em caso de adaptação do REA -->
+              <!-- <p>
+              <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+              <span><a href="#">Versão original da Univesp</a></span>
+            </p> -->
+          </div>
+
+          <div class="aval-rea d-flex">
+            <!-- Atualizar "Nome+do+Recurso" -->
+            <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSeG3IjXraVGlHlQo2ffSiF0JkN5ga2qRuX0PGQ-Of72-1A81Q/viewform?usp=pp_url&entry.542052009=O+que+é+TIC?" target="_blank">Avaliar este recurso</a>
+            <!-- Atualizar "Nome+do+Recurso" -->
+            <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSdVlvpMJ-PAmiNz1LxmgfrJSivihklJbkaEl2jBQZ65IJy97w/viewform?usp=pp_url&entry.1523910789=O+que+é+TIC?" target="_blank">Reportar erro</a>
+          </div>
+
+        </div>
+      </footer>
+      <!-- Fim do rodapé -->
+
+      <!-- Fim da div .esconder-tela-pequena
+      Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+      <!-- </div> -->
+
+      <!-- AVISO =+960px -->
+      <!-- Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+      Caso contrário, deletar -->
+      <!-- <div class= "container d-lg-none text-center">
+      <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+      <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+    </a>
+  </div>
+  <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+  <div style="margin-top:.5rem">
+  <p>
+  <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+</p>
+<p>
+<font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+</p>
+</div>
+</div> -->
+
+<!-- Créditos -->
+<div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <h6>Governo do Estado de São Paulo</h6>
+        <p>Secretaria de Desenvolvimento Econômico</p>
+
+        <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+        <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+        <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+        <h6>Equipe</h6>
+        <p><span class="funcao">Docente responsável</span>Thais Cilli</p>
+        <p><span class="funcao">Ilustração</span>Celso Lourenço</p>
+        <p><span class="funcao">Layout</span>Celso Lourenço</p>
+        <p><span class="funcao">Programação</span>Bruna Garabito e William Kimura</p>
+        <p><span class="funcao">Planejamento e Design Instrucional</span>Natália Fernandes</p>
+
+      </div>
+      <div class="modal-footer">
+        <p>Fevereiro/2019</p>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Arquivos Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!-- jsSocials -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+<script>
+var share = $("#share-buttons");
+var page_title = $(document).attr('title');
+var page_url = window.location.href;
+share.jsSocials({
+  shares: [
+    {
+      share: "facebook",
+      label: "Facebook",
+      logo: "fab fa-facebook-f",
+    },
+    {
+      share: "twitter",
+      label: "Twitter",
+      logo: "fab fa-twitter",
+    },
+    {
+      share: "whatsapp",
+      label: "Whatsapp",
+      logo: "fab fa-whatsapp",
+    },
+  ],
+  url: page_url,
+  text: 'Confira o REA ' + page_title + '.',
+  showLabel: true,
+  showCount: false,
+  shareIn: "popup",
+});
+</script>
+
+
+<!-- Custom JS -->
+<script type="text/javascript" src="javascripts/events.js"></script>
+
+<!-- Analytics. Remova em caso de reutilização do REA -->
+<script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>

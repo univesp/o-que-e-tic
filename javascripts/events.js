@@ -39,7 +39,7 @@ var inicio = "sim";
   $("footer").clone().appendTo(".teoria-overlay");
 
 
-  // Controlam o modal de teoria
+  // CONTROLAM O MODAL DE TEORIA
   var caixaTeoria =  document.querySelector('.teoria-overlay')
   //Chama modal de teoria
   function chamaTeoria(){
@@ -62,24 +62,27 @@ var inicio = "sim";
     console.log("dispensando teoria");
     inicio = "não";
   };
-  //Chama a navbar
+  //Chama a navbar - acionado somente quando o REA é aberto
   function chamaHeader(){
     $("nav").fadeIn();
   }
+  //Chama o botão de fechar - acionado quando o modal é chamado no decorrer do REA
   function chamaFechar(){
     $("#fechar-container").removeClass('animated fadeOutRight');
     $("#fechar-container").addClass('animated fadeInRight');
     $("#fechar-container").show();
   };
+  //Dispensa o botão de fechar
   function dispensaFechar(){
     $("#fechar-container").removeClass('animated fadeInRight');
     $("#fechar-container").addClass('animated fadeOutRight');
   }
 
-  //Chama teoria ao início do REA
+  //CHAMA O MODAL DE TEORIA AO INÍCIO DO REA
   setTimeout(chamaTeoria, 250);
   setTimeout(chamaHeader, 1100);
 
+  //Funções do botão ao final do modal de teoria - dispensa o modal e inicia o chat
   $("#botao-modal").click(function(){
     if(inicio == "sim"){
       iniciaChat();
@@ -98,11 +101,7 @@ var inicio = "sim";
     setTimeout(chamaFechar, 200);
   });
 
-
-
-  // $("#botao-modal").on("click", dispensaTeoria());
-
-  //BOTAO OVERLAY
+  //Controla o overlay do modal de teoria
   $(".overlay-container").click(function(){
     if ($(this).hasClass('expanded')) {
       $(this).removeClass('expanded');
@@ -113,7 +112,6 @@ var inicio = "sim";
 
 
   //CARDS
-
   $(".card-container").click(function(){
     if ($(this).hasClass('hover')) {
       $(this).removeClass('hover');

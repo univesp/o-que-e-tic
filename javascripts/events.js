@@ -13,26 +13,18 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip()
   })
 
-  // Ações do usuário que mostram e/ou escondem o logotipo.
-  // Por padrão, mostra no topo e fim da página.
-  // Remova ou reescreva de acordo com o projeto.
+// Ações do usuário que mostram e/ou escondem o logotipo.
 
-// //define se é a primeira tela, para não chamar o header quando a teoria for acessada novamente
+//define se é a primeira tela, para não chamar o header quando a teoria for acessada novamente
 var inicio = "sim";
 
   $(window).scroll(function(){
-
     var nav = $("nav");
     var scroll = $(window).scrollTop();
-
     if(inicio == "sim"){
-
       // Mostra o nav quando a página está no topo
       if(scroll == 0){
         nav.fadeIn();
-      //Mostra a nav quando a página chega no fim
-      // } else if (scroll == $(document).height() - $(window).height()) {
-      //   nav.fadeIn();
       //Esconde a nav
       } else {
         nav.fadeOut();
@@ -42,19 +34,9 @@ var inicio = "sim";
 
   // Seu código abaixo
 
-  //Verifica altura inicial do header e aplica como margem pora o container do Recurso
-  // var alturaAppHeader = $(".app-header").outerHeight();
-  // console.log(alturaAppHeader);
-  // $(".app-container").css("margin-top", alturaAppHeader);
-
-  //Tentativa de quebrar a linha de estrelas
-  // $(".stars").find("i:nth-child(6)").css("flex-basis","90%");
-
-
   // Move o footer para dentro do app-header e faz uma cópia dele no modal de teoria
   $("footer").appendTo("#copia-footer");
-  $("footer").clone().appendTo(".teoria-overlay");
-  // $("footer").appendTo("#copia-footer");
+  $("footer").clone().appendTo(".teoria-overlay"); 
 
 
   // Controlam o modal de teoria
